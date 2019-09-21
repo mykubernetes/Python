@@ -163,4 +163,16 @@ $ jupyter notebook password                    #设置密码
 $ jupyter notebook --ip=0.0.0.0 --no-browser   #启动jupyter
 $ ss -tanl
 ```  
-浏览器登录http://ip_addr:8888
+浏览器登录http://ip_addr:8888  
+
+
+导出包  
+```
+$ pip freeze > /opt/py_package.txt
+$ cat /opt/py_package.txt
+```  
+
+导入包  
+```
+$ pip install -r /opt/py_package.txt
+```  
