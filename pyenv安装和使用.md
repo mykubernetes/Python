@@ -103,7 +103,16 @@ $ pyenv versions
   3.5.3
   
 切换版本
+$ mkdir test/projects/ -p
+$ cd test/projects/
 $ pyenv local 3.5.3
+查看pyenv版本
+$ pyenv version
+3.5.3 (set by /root/test/projects/.python-version)
+查看python版本
+$ python -V
+Python 3.5.3
+
 ```  
 - global 全局设置 作用域全局，切换后会导致所有shell都会切换，禁用
 - shell 会话设置 影响只作用于当前会话
