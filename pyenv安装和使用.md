@@ -148,3 +148,19 @@ $ vim ~/.pip/pip.conf
 index-url=https://mirrors.aliyun.com/pypi/simple/
 trusted-host=mirrors.aliyun.com
 ```  
+
+安装ipython  
+```
+$ pip install ipython
+$ ipython
+```  
+
+安装Jupyter  
+```
+$ pip install jupyter                          #安装jupyter
+$ jupyter notebook help                        #查看帮助
+$ jupyter notebook password                    #设置密码
+$ jupyter notebook --ip=0.0.0.0 --no-browser   #启动jupyter
+$ ss -tanl
+```  
+浏览器登录http://ip_addr:8888
