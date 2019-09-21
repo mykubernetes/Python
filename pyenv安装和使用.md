@@ -90,3 +90,21 @@ $ pyenv install --list
 ```
 # pyenv install 3.5.3 -v
 ```  
+
+10、查看当前版本和所有版本  
+```
+查看当前版本
+$ pyenv version
+system (set by /root/.pyenv/version)
+
+查看所有版本，发现带*号的为当前版本
+$ pyenv versions
+* system (set by /root/.pyenv/version)
+  3.5.3
+  
+切换版本
+$ pyenv local 3.5.3
+```  
+- global 全局设置 作用域全局，切换后会导致所有shell都会切换，禁用
+- shell 会话设置 影响只作用于当前会话
+- local 本地设置 使用pyenv local设置从当前工作目录开始向下递归都继承这个设置
