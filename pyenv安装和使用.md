@@ -139,8 +139,8 @@ $ pyenv  local test353
 (test353) [root@node01 cmdb]$
 ```  
 
-pip
-和yum一样包管理器
+pip  
+和yum一样包管理器  
 ```
 $ mkdir ~/.pip
 $ vim ~/.pip/pip.conf
