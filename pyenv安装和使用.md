@@ -103,8 +103,8 @@ $ pyenv versions
   3.5.3
   
 切换版本
-$ mkdir test/projects/ -p
-$ cd test/projects/
+$ mkdir test/projects/cmdb -p
+$ cd test/projects/cmdb/
 $ pyenv local 3.5.3
 查看pyenv版本
 $ pyenv version
@@ -112,8 +112,29 @@ $ pyenv version
 查看python版本
 $ python -V
 Python 3.5.3
-
 ```  
 - global 全局设置 作用域全局，切换后会导致所有shell都会切换，禁用
 - shell 会话设置 影响只作用于当前会话
 - local 本地设置 使用pyenv local设置从当前工作目录开始向下递归都继承这个设置
+
+
+Virtualenv 虚拟环境设置  
+需要对版本和包管理进行隔离，以免冲突，通过Virtualenv插件  
+```
+$ cd test/projects/cmdb
+$ pyenv virtualenv 3.5.3 test353
+Requirement already satisfied: setuptools in /root/.pyenv/versions/3.5.3/envs/test353/lib/python3.5/site-packages
+Requirement already satisfied: pip in /root/.pyenv/versions/3.5.3/envs/test353/lib/python3.5/site-packages
+
+
+$ pyenv versions
+* system (set by /root/test/projects/.python-version)
+  3.5.3
+  3.5.3/envs/test353    #新加隔离环境
+  3.6.1
+  test353               #新加隔离环境
+
+切换隔离环境
+$ pyenv  local test353
+(test353) [root@node01 cmdb]$
+```  
