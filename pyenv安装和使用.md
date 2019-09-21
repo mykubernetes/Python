@@ -138,3 +138,13 @@ $ pyenv versions
 $ pyenv  local test353
 (test353) [root@node01 cmdb]$
 ```  
+
+pip
+和yum一样包管理器
+```
+$ mkdir ~/.pip
+$ vim ~/.pip/pip.conf
+[global]
+index-url=https://mirrors.aliyun.com/pypi/simple/
+trusted-host=mirrors.aliyun.com
+```  
