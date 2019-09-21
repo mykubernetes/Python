@@ -176,3 +176,24 @@ $ cat /opt/py_package.txt
 ```
 $ pip install -r /opt/py_package.txt
 ```  
+
+
+
+pyenv离线安装  
+
+1、首先从github上克隆项目  
+```
+$ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+$ git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+$ git clone https://github.com/pyenv/pyenv-update.git ~/.pyenv/plugins/pyenv-update
+$ git clone https://github.com/pyenv/pyenv-which-ext.git ~/.pyenv/plugins/pyenv-which-ext
+```  
+
+2、可以把克隆的目录打包，方便以后离线使用  
+```
+$ vim ~/.bash_profile
+export PATH="/home/python/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+$ source ~/.bash_profile
+```  
