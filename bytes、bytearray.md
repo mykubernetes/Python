@@ -38,3 +38,9 @@ bytes
 print(a.decode())
 'abc'
 ```  
+
+```
+a = "abc".encode()
+pring(a.split(b'b'))
+[b'a',b'c']
+```  
