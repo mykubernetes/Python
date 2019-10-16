@@ -44,3 +44,14 @@ a = "abc".encode()
 pring(a.split(b'b'))
 [b'a',b'c']
 ```  
+
+bytearray定义
+---
+定义
+- bytearray() 空bytearray
+- bytearray(int) 指定字节的bytearray，被0填充
+- bytearray(iterable_of_ints) -> bytearray [0,255]的int组成的可迭代对象
+- bytearray(string, encoding[, errors]) -> bytearray 近似string.encode()，不过返回可变对象
+- bytearray(bytes_or_buffer) 从一个字节序列或者buffer复制出一个新的可变的bytearray对象
+- 注意，b前缀定义的类型是bytes类型
+
